@@ -11,6 +11,15 @@ PwrFGrBEFmCSXzoM5z34ComotQ2xl0iHL+rimtjGqM8inPBMBioMj9jv16G4CJWzGDbA1CUeBXXhQRcs
 
 Rlk2SHY0UDRLcmlzU251eUR1RnlLd01YTkU1YXJSQ0xVUzlFS2M0YWJsQ3VLYWRwMEp6ZEYwR0RzWkhtMnBteGF3a0VkU1UrWkdBd3VZcTlOTDBhOWVhWlZpSlFla1U2SHBHRUxobVVtRjYwY0Y3emZRRnNvRnU2MFNORzJJd1BRMWxoWExhMEowZFNyOWtTY096dGFnPT0
 
+
+import hashlib
+import json
+import base64
+import requests
+from Crypto.Cipher import AES
+from Crypto import Random
+from Crypto.Util.Padding import pad
+
 class Adauth:
     def __init__(self):
         self.secret_key = "SSLQUACKAXOT"
